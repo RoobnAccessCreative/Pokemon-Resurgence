@@ -172,8 +172,17 @@ p.text {
 .options {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
   justify-content: center;
+  align-items: center;
+}
+
+.count-cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5%;
+  padding-bottom: 3%;
 }
 
 .counter {
@@ -181,11 +190,7 @@ p.text {
   color: #14161e;
   width: fit-content;
   min-width: 0;
-}
-.pos {
-  position: absolute;
-  bottom: 5%;
-  right: 3%
+  padding-top: 0.8rem;
 }
 .counter.pos:hover {
   background-color:#bb9050;
@@ -258,6 +263,7 @@ p.text {
   margin-bottom: -5% !important;
 }
 
+
 /* -- PASS.JS ONLY -- */
 
 
@@ -301,13 +307,6 @@ p.text {
   
 }
 
-/* .error-y-but {
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-} */
-
 .but.p {
   padding: 0.7rem 1rem;
   margin-top: 6%;
@@ -324,12 +323,27 @@ p.text {
 }
 
 
-
-
 /* -- MEDIA -- */
 
 
+@media only screen and (min-width: 400px) {
+  .pos {
+    position: absolute;
+    bottom: 5%;
+    right: 3%
+  }
+  .count-cont {
+    display: unset;
+    width: unset;
+    padding: unset;
+    margin: unset;
+  }
+}
+
 @media only screen and (min-width: 600px) {
+  .app {
+    overflow: hidden;
+  }
   .logo {
     width: 40vw;
   }
@@ -373,6 +387,7 @@ p.text {
 
 /* -- OVERRIDING SEMANTIC -- */
 
+
 i.icon.sidebar:before {
   color: #DDC5A0;
 }
@@ -390,8 +405,9 @@ i.big.icon {
 div.column{
   padding-bottom: 0 !important;
 }
-.ui.inverted.vertical.ui.overlay.right.wide.sidebar.menu {
+.ui.inverted.vertical.ui.push.right.wide.sidebar.menu {
   background-color: #3F4D7E;
+  overflow: hidden;
 }
 a.item:hover {
   background-color: #3F4D7E;
