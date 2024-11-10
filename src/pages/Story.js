@@ -113,11 +113,13 @@ function Tale({visible, setVisible}) {
             <button className='but opt' onClick={() => handleStoryChange(curStory["opt"][2][1])  }>{curStory["opt"][2][0]}</button>
           </div>    
           }
+
           <div className='count-cont'>
-          <div className='but counter pos'>
-            <h3>{curStory["code"]}</h3>
+            <div className='but counter pos'>
+              <h3>{curStory["code"]}</h3>
+            </div>
           </div>
-          </div>
+            
         </div>
 
       </>
