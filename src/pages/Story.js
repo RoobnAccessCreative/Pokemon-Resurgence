@@ -36,13 +36,11 @@ function Tale({visible, setVisible}) {
     
     if (savedStory && savedStory in path) {
       setStory(path[savedStory]);
-      console.log("loaded")
     }
   }, []); // Empty dependency array ensures this only runs once after initial render
 
   function handleStoryChange(option){
     Cookies.set("Load", path[option]["code"])
-    console.log(path)
     setStory(path[option])
   }
 
@@ -115,9 +113,10 @@ function Tale({visible, setVisible}) {
             <button className='but opt' onClick={() => handleStoryChange(curStory["opt"][2][1])  }>{curStory["opt"][2][0]}</button>
           </div>    
           }
-
+          <div className='count-cont'>
           <div className='but counter pos'>
             <h3>{curStory["code"]}</h3>
+          </div>
           </div>
         </div>
 
@@ -132,12 +131,6 @@ function Tale({visible, setVisible}) {
 function Story() {
   const [visible, setVisible] = React.useState(false);
 
-  // function Wipe() {
-  //   Cookies.get("Load");
-  //   Cookies.remove("Load");
-
-  //   window.open("/story", "_self");
-  // }
 
   return (
     <div className='app'>
@@ -148,7 +141,7 @@ function Story() {
             <SidebarPushable as={Segment}>
               <Sidebar
                 as={Menu}
-                animation='overlay'
+                animation='push'
                 icon='labeled'
                 inverted
                 onHide={() => setVisible(false)}
