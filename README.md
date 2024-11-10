@@ -11,7 +11,7 @@
     npm install semantic-ui-react semantic-ui-css
   ```
   
-  Once everything is installed, use 'cd' to get to the folder containing src, public, etc - `cd <folder>`
+  Once everything is installed, use `cd <app/folder>` to get to the folder containing the react app.
   Then to run the app, run `npm start`.
  
   
