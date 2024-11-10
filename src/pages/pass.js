@@ -74,7 +74,7 @@ function Page() {
           <SidebarPushable as={Segment}>
             <Sidebar
               as={Menu}
-              animation='overlay'
+              animation='push'
     
               inverted
               onHide={() => setVisible(false)}
