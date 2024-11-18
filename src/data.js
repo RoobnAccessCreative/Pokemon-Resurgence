@@ -2458,7 +2458,7 @@ export let path = {
     "text1" : "Returning to Wailord, you can't shake off a sense of hopelessness. One no lessened by Sarge who informs you that Red hasn't been found anywhere in Kanto or even Johto. Reluctanty, you recall your time on Mount Silver; leading Sarge to a halt before turning to you and bluntly stating: 'We don't know who's heading for the Indigo Plateau, but if Lance cannot stop him, YOU must defeat them or we are all lost.'",
     "text2" : "No fibre in you thinks you can do what he asks—you just lost to the one supposed to save us—but the glimour in Sarge's eyes speaks that he believes in you. For that, you have to try.",
     "opt" : [
-      ["Set off", "3NNG03"]
+      ["Set off", "3NNG05"]
     ]
   },
   "3NNN35": { //none
